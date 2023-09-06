@@ -1,11 +1,254 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Queinquellerie</title>
-</head>
-<body>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--=============== BOXICONS ===============-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="assets/css/icomoon/style.css">
+        <title>BMK Africa</title>
+        <style>
+            /*Fuentes de tipografia*/
+            @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600|Raleway:400,600&display=swap');
+        </style>
+    </head>
+
+    <body>
+        <div id="loader">
+            <div class="loader">
+                <div class="cercle"></div>
+                <div class="cercle"></div>
+            </div>
+        </div>
+        <!--=============== HEADER ===============-->
+        <div id="app">
+            <header class="header" id="header">
+                <nav class="nav container">
+                    <a href="#" class="nav__logo">BMK Africa</a>
     
-</body>
-</html>
+                    <div class="nav__menu" id="nav-menu">
+                        <ul class="nav__list">
+                            <li class="nav__item">
+                                <a href="#home" class="nav__link active-link">Acceuil</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#about" class="nav__link">Apropos</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#services" class="nav__link">Services</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#contact" class="nav__link">Contact</a>
+                            </li>
+    
+                            <i class='bx bx-moon change-theme' id="theme-button"></i>
+                        </ul>
+                    </div>
+    
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class='bx bx-grid-alt'></i>
+                    </div>
+    
+                    <a href="#" class="button button__header">Contactez-nous</a>
+                </nav>
+            </header>
+            <div class="home-container-first">
+                <div class="home_container bd-grid">
+                    <div class="home__data">
+                        <h1 class="home__title_container">BMK Africa</h1>
+                        <span class="home__name">Nous rendons le numérique à la portée de tout le monde.</span>
+    
+                        <a href="#" class="button">Nous contacter</a>
+                        
+                        <div class="home__social">
+                            <span class="home__social-name">Réseaux</span>
+                            <a href="" class="home__social-icon"><i class="icon-github"></i></a>
+                            <a href="" class="home__social-icon"><i class="icon-linkedin"></i></a>
+                            <a href="" class="home__social-icon"><i class="icon-instagram"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="home__img">
+                        <img src="assets/images/home-img.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <main class="main">
+                <!--=============== HOME ===============-->
+                <section class="home section" id="home">
+                    <div class="home__container container grid">
+                        <img class="svg__img svg__color home__img" src="assets/images/home-img.png" alt="security">
+                        
+    
+                        <div class="home__data">
+                            <h1 class="home__title">Qui sommes-nous ?</h1>
+                            <p class="home__description">
+                                BMK Africa est une entreprise à capitaux congolais, spécialisée généralement dans le numérique, la formation en transformation digitale, dans la formation de management stratégique ainsi que dans la conception et la réalisation de logiciels et applications web.
+                            </p>
+    
+                            <a href="#" class="button">Nous contacter</a>
+    
+                        </div>   
+                    </div>
+                </section>
+                <!--=============== SECURITY ===============-->
+                <section class="security section container">
+                    <div class="security__container grid">
+                        <div class="security__data">
+                            <h2 class="section__title-center">Your Safety Is <br> Important</h2>
+                            <p class="security__description">When your order reaches you, we have the health safety protocols, 
+                                so that you are protected from any disease. Watch the video of how the delivery is made.
+                            </p>
+                        </div>
+                        <img class="svg__img svg__color" src="assets/images/motion-design-pas-cher.gif" alt="" srcset="">
+                    </div>
+                </section>
+    
+                <!--=============== SERVICES ===============-->
+                <section class="services section container" id="services">
+                    <h2 class="section__title">Nos services</h2>
+                    <div class="services__container grid">
+                        <div class="services__data">
+                            <h3 class="services__subtitle">Développement des logiciels</h3>
+                            <img src="assets/images/main-course-3.png" class="svg__color services__img" alt="" srcset="">
+       
+                            <p class="services__description">Nous construisons vos sites web, applications web, mobile et desktop selon vos préférences.</p>
+                            <div>
+                                <a href="#" class="button btn-black">Learn More</a> 
+                            </div>
+                        </div>
+    
+                        <div class="services__data">
+                            <h3 class="services__subtitle">Design graphique</h3>
+                            <img class="svg__color services__img" src="assets/images/service.gif" alt="" srcset="">
+    
+                            <p class="services__description">La seule façon d'habiller votre entreprise de l'extérieur c'est de lui donner une image, une valeur, une identité,... laissez-nous le travaille.</p>
+                            <div>
+                                <a href="#" class="button btn-black">Learn More</a>
+                            </div>
+                        </div>
+    
+                        <div class="services__data">
+                            <h3 class="services__subtitle">Formation en management</h3>
+                            <img class="svg__color services__img" src="assets/images/home-img.png" alt="" srcset="">                        
+                            <p class="services__description">La seule façon d'habiller votre entreprise de l'extérieur c'est de lui donner une image, une valeur, une identité,... laissez-nous le travaille..</p>
+                            <div>
+                                <a href="#" class="button btn-black">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+    
+                <!--=============== APP ===============-->
+                <section class="app section container">
+                    <div class="app__container grid">
+                        <div class="app__data">
+                            <h2 class="section__title-center">Mission de BMK Africa</h2>
+                            <p class="app__description">
+                                BMK Africa corporate a pour vision de contribuer au développement digital et en management des entreprises. 
+                            </p>
+                            <div class="app__buttons">
+                                <a href="#" class="button button-flex">
+                                    <i class='bx bxl-linkedin button__icon btn-black'></i> Linkedin
+                                </a>
+                                <a href="#" class="button button-flex">
+                                    <i class='bx bxl-github button__icon btn-black' ></i> Github
+                                </a>
+                            </div>
+                        </div>
+                        <img class="svg__img svg__color app__img" src="assets/images/contenus-600x600.png" alt="" srcset=""> 
+                    </div>
+                </section>
+                <!--=============== CONTACT US ===============-->
+                <section class="contact section container" id="contact">
+                    <div class="contact__container grid">
+                        <div class="contact__content">
+                            <h2 class="section__title-center">Contactez-nous <br> ici</h2>
+                            <p class="contact__description">
+                                Notre boîte d'arrivée est toujours ouverte, en attente de vos messages, hâte de parler avec vous.    
+                            </p>
+                        </div>
+    
+                        <ul class="contact__content grid">
+                            <li class="contact__address">Telephone: <span class="contact__information">+243 970 519 529</span></li>
+                            <li class="contact__address"><span class="contact__information">+243 975 501 066</span></li>
+                            <li class="contact__address">Email:  <span class="contact__information">mwilaboanerges@gmail.com</span></li>
+                            <li class="contact__address"><span class="contact__information">mimaberekia@gmail.com</span></li>
+                            <li class="contact__address">Location: <span class="contact__information">Lubumbashi</span></li>
+                        </ul>
+    
+                        <div class="contact__content">
+                            <a href="#" class="button">Contactez-nous</a>
+                        </div>
+                    </div>
+                </section>
+            </main>
+    
+            <!--=============== FOOTER ===============-->
+            <footer class="footer section">
+                <div class="footer__container container grid">
+                    <div class="footer__content">
+                        <a href="#" class="footer__logo">BMK Africa</a>
+                        <p class="footer__description">Order Products Faster <br> Easier</p>
+                    </div>
+    
+                    <div class="footer__content">
+                        <h3 class="footer__title">Our Services</h3>
+                        <ul class="footer__links">
+                            <li><a href="#" class="footer__link">Pricing </a></li>
+                            <li><a href="#" class="footer__link">Discounts</a></li>
+                            <li><a href="#" class="footer__link">Report a bug</a></li>
+                            <li><a href="#" class="footer__link">Terms of Service</a></li>
+                        </ul>
+                    </div>
+    
+                    <div class="footer__content">
+                        <h3 class="footer__title">Our Company</h3>
+                        <ul class="footer__links">
+                            <li><a href="#" class="footer__link">Blog</a></li>
+                            <li><a href="#" class="footer__link">Our mision</a></li>
+                            <li><a href="#" class="footer__link">Get in touch</a></li>
+                        </ul>
+                    </div>
+    
+                    <div class="footer__content">
+                        <h3 class="footer__title">Community</h3>
+                        <ul class="footer__links">
+                            <li><a href="#" class="footer__link">Support</a></li>
+                            <li><a href="#" class="footer__link">Questions</a></li>
+                            <li><a href="#" class="footer__link">Customer help</a></li>
+                        </ul>
+                    </div>
+    
+                    <div class="footer__social">
+                        <a href="#" class="footer__social-link"><i class='bx bxl-facebook-circle '></i></a>
+                        <a href="#" class="footer__social-link"><i class='bx bxl-twitter'></i></a>
+                        <a href="#" class="footer__social-link"><i class='bx bxl-instagram-alt'></i></a>
+                    </div>
+                </div>
+    
+                <p class="footer__copy">&#169; BMK Africa. Tous droits reservés</p>
+            </footer>
+    
+            <!--=============== SCROLL UP ===============-->
+            <a href="#" class="scrollup" id="scroll-up">
+                <i class='bx bx-up-arrow-alt scrollup__icon'></i>
+            </a>
+        </div>
+        <script>
+            document.getElementById('app').classList.add("none");
+    
+            function showContent() {
+                document.querySelector("#loader").classList.add("none");
+                document.querySelector("#loader").style.height = "0px";
+                document.querySelector("#loader").style.display = "none";
+                document.getElementById('app').classList.remove("none");
+            }
+            setTimeout(showContent, 3000);
+        </script>
+        <!--=============== MAIN JS ===============-->
+        <script src="assets/js/app.js"></script>
+    </body>
+</html> 
