@@ -280,11 +280,6 @@ body.dark-theme {
   position: relative;
 }
 
-
-/* Change background header */
-.scroll-header {
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
-}
 .btn{
   background: var(--color-text);
   color: #fff;
@@ -739,14 +734,7 @@ img{
     order: -1;
   }
 }
-@media (max-width: 768px) {
-  .header {
-    background-color: #222;
-  }
-  .nav__logo{
-    color: #fff;
-  }
-}
+
 @media screen and (min-width: 767px) {
   body {
     margin: 0;
