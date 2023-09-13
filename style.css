@@ -82,6 +82,7 @@ body {
   background-color: var(--body-color);
   color: var(--text-color);
   transition: .5s;
+  max-width: 100%;
 }
 
 h1, h2, h3 {
@@ -105,15 +106,7 @@ img {
 }
 /*=============== THEME ===============*/
 /*========== Variables Dark theme ==========*/
-body.dark-theme {
-  --first-color-light: hsl(var(--hue), var(--sat), 75%);
-  --title-color: hsl(var(--hue), 4%, 95%);
-  --text-color: hsl(var(--hue), 4%, 80%);
-  --body-color: hsl(var(--hue), 8%, 13%);
-  --container-color: hsl(var(--hue), 8%, 16%);
-  --scroll-bar-color: hsl(var(--hue), 4%, 32%);
-  --scroll-thumb-color: hsl(var(--hue), 4%, 24%);
-}
+
 
 /*========== Button Dark/Light ==========*/
 .bx-moon{
