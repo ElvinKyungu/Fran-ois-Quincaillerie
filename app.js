@@ -1,3 +1,12 @@
+
+function showContent() {
+    document.querySelector("#loader").classList.add("none");
+    document.querySelector("#loader").style.height = "0px";
+    document.querySelector("#loader").style.display = "none";
+    document.getElementById('app').classList.remove("none");
+}
+setTimeout(showContent, 2000);
+
 /*=============== SHOW MENU ===============*/
 const showMenu = (toggleId, navId) =>{
     const toggle = document.getElementById(toggleId),

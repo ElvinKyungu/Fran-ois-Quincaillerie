@@ -6,25 +6,26 @@
         <!--=============== CSS ===============-->
         <link rel="stylesheet" href="style.css">
         <script src="https://cdn.tailwindcss.com"></script>
-        <title>Elec metal</title>
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+        <title>Metal Elec</title>
     </head>
 
     <body>
-        <!-- <div id="loader">
+        <div id="loader" class="top-0 fixed justify-center bg-white flex items-center h-screen w-full z-50">
             <div class="loader">
                 <div class="cercle"></div>
                 <div class="cercle"></div>
             </div>
-        </div> -->
+        </div>
         <!--=============== HEADER ===============-->
         <div id="app">
             <header class="header shadow-md" id="header">
                 <nav class="nav ">
                     <div class="flex items-center justify-center">
                         <img src="images/logo.png" class="logo__img" alt="">
-                        <h2 class="text-xl font-extrabold  md:text-2xl xl:text-3xl text-gray-900">Elec Métal</h2>
+                        <h2 class="text-xl font-extrabold  md:text-2xl xl:text-3xl text-gray-900 ">Métal Elec</h2>
                     </div>
-    
                     <div class="nav__menu" id="nav-menu">
                         <ul class="nav__list">
                             <li class="nav__item">
@@ -49,7 +50,7 @@
                     </div>
                 </nav>
             </header>
-            <section class="home">
+            <section class="home ">
                 <div class="swiper home-slider">
                     <div class="swiper-wrapper">
                         <section class="swiper-slide slide" style="background: url(images/bg-home.jpg) no-repeat;">
@@ -87,11 +88,13 @@
                 </div>
             </section>
             <main class="main">
-                <section class="bg-white -mt-16">
-                    <div class="grid max-w-screen-xl px-8 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
+                <section class=" -mt-16 max-w-[100%]" >
+                    <div class="grid max-w-screen-xl z-10 px-8 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
                         <div class="mr-auto px-8 place-self-center lg:col-span-7">
                             <h2 class="max-w-2xl mb-4 text-4xl font-extrabold  md:text-5xl xl:text-6xl">Payments tool for software companies</h2>
-                            <p class="max-w-2xl mb-6 font-light lg:mb-8 md:text-lg lg:text-xl text-gray-700">From checkout to global sales tax compliance, companies around the world use Flowbite to simplify their payment stack.</p>
+                            <p class="max-w-2xl mb-6 font-light lg:mb-8 md:text-lg lg:text-xl text-gray-700">
+                                Chez Metal Elec, nous sommes engagés à offrir des produits et des services de qualité supérieure à nos clients, tout en assurant un service clientèle exceptionnel à chaque étape du processus. Contactez-nous dès aujourd'hui pour en savoir plus sur nos offres et nos tarifs compétitifs
+                            </p>
                             <a href="#" class="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white rounded-lg bg-[#d47641] hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 focus:ring-primary-900">
                                 Contacter
                                 <svg class="w-5 h-5 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
@@ -103,15 +106,15 @@
                     </div>
                 </section>
                 <section class="mt-8 px-3 lg:px-12">
-                    <h2 class="mb-4 text-4xl font-extrabold text-center md:text-5xl xl:text-6xl">Quelques produits</h2>
-                    <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 gap-4 justify-center">
-                        <div class="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow shadow-md flex flex-col justify-between">
-                            <a href="#" class="flex items-center justify-center">
-                                <img class="p-8 rounded-t-lg max-h-[15rem]" src="images/product1.png" alt="product image" />
+                    <h2 class="mb-4 text-4xl font-extrabold text-center md:text-5xl xl:text-6xl my-12">Quelques produits</h2>
+                    <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 gap-4 mt-8 justify-center h-[21rem]">
+                        <div class="w-full relative max-w-sm bg-white border border-gray-200 rounded-lg shadow shadow-md flex flex-col justify-between">
+                            <a href="#" class="flex relative items-center justify-center">
+                                <img class="top-0 absolute rounded-t-lg max-h-[15rem]" src="images/photo.avif" alt="product image" />
                             </a>
                             <div class="px-5 pb-5 text-center">
                                 <a href="#">
-                                    <h5 class="text-xl font-semibold tracking-tight text-gray-900">Starlight Sport</h5>
+                                    <h5 class="text-xl font-semibold tracking-tight text-gray-900 mt-8">Nom du produit</h5>
                                 </a>
                                 <div class="flex items-center mt-2.5 mb-5">
                                     <svg class="w-4 h-4 text-yellow-300 mr-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
@@ -133,17 +136,16 @@
                                 </div>
                                 <div class="flex items-center justify-between">
                                     <span class="text-3xl font-bold text-gray-900">$599</span>
-                                    <a href="#" class="text-white bg-[#d47641] font-medium rounded-lg text-sm px-5 py-2.5 text-center">Contacter</a>
                                 </div>
                             </div>
                         </div>
-                        <div class="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow shadow-md flex flex-col justify-between">
-                            <a href="#" class="flex items-center justify-center">
-                                <img class="p-8 rounded-t-lg max-h-[15rem]" src="images/product2.png" alt="product image" />
+                        <div class="w-full relative max-w-sm bg-white border border-gray-200 rounded-lg shadow shadow-md flex flex-col justify-between">
+                            <a href="#" class="flex relative items-center justify-center">
+                                <img class="top-0 absolute rounded-t-lg max-h-[15rem]" src="images/photo.avif" alt="product image" />
                             </a>
                             <div class="px-5 pb-5 text-center">
                                 <a href="#">
-                                    <h5 class="text-xl font-semibold tracking-tight text-gray-900">Starlight Sport</h5>
+                                    <h5 class="text-xl font-semibold tracking-tight text-gray-900 mt-8">Nom du produit</h5>
                                 </a>
                                 <div class="flex items-center mt-2.5 mb-5">
                                     <svg class="w-4 h-4 text-yellow-300 mr-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
@@ -165,17 +167,16 @@
                                 </div>
                                 <div class="flex items-center justify-between">
                                     <span class="text-3xl font-bold text-gray-900">$599</span>
-                                    <a href="#" class="text-white bg-[#d47641] font-medium rounded-lg text-sm px-5 py-2.5 text-center">Contacter</a>
                                 </div>
                             </div>
                         </div>
-                        <div class="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow shadow-md flex flex-col justify-between">
-                            <a href="#" class="flex items-center justify-center">
-                                <img class="p-8 rounded-t-lg max-h-[15rem]" src="images/product3.png" alt="product image" />
+                        <div class="w-full relative max-w-sm bg-white border border-gray-200 rounded-lg shadow shadow-md flex flex-col justify-between">
+                            <a href="#" class="flex relative items-center justify-center">
+                                <img class="top-0 absolute rounded-t-lg max-h-[15rem]" src="images/photo.avif" alt="product image" />
                             </a>
                             <div class="px-5 pb-5 text-center">
                                 <a href="#">
-                                    <h5 class="text-xl font-semibold tracking-tight text-gray-900">Starlight Sport</h5>
+                                    <h5 class="text-xl font-semibold tracking-tight text-gray-900 mt-8">Nom du produit</h5>
                                 </a>
                                 <div class="flex items-center mt-2.5 mb-5">
                                     <svg class="w-4 h-4 text-yellow-300 mr-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
@@ -197,17 +198,16 @@
                                 </div>
                                 <div class="flex items-center justify-between">
                                     <span class="text-3xl font-bold text-gray-900">$599</span>
-                                    <a href="#" class="text-white bg-[#d47641] font-medium rounded-lg text-sm px-5 py-2.5 text-center">Contacter</a>
                                 </div>
                             </div>
                         </div>
-                        <div class="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow shadow-md flex flex-col justify-between">
-                            <a href="#" class="flex items-center justify-center">
-                                <img class="p-8 rounded-t-lg max-h-[15rem]" src="images/product4.png" alt="product image" />
+                        <div class="w-full relative max-w-sm bg-white border border-gray-200 rounded-lg shadow shadow-md flex flex-col justify-between">
+                            <a href="#" class="flex relative items-center justify-center">
+                                <img class="top-0 absolute rounded-t-lg max-h-[15rem]" src="images/photo.avif" alt="product image" />
                             </a>
                             <div class="px-5 pb-5 text-center">
                                 <a href="#">
-                                    <h5 class="text-xl font-semibold tracking-tight text-gray-900">Starlight Sport</h5>
+                                    <h5 class="text-xl font-semibold tracking-tight text-gray-900 mt-8">Nom du produit</h5>
                                 </a>
                                 <div class="flex items-center mt-2.5 mb-5">
                                     <svg class="w-4 h-4 text-yellow-300 mr-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
@@ -229,7 +229,6 @@
                                 </div>
                                 <div class="flex items-center justify-between">
                                     <span class="text-3xl font-bold text-gray-900">$599</span>
-                                    <a href="#" class="text-white bg-[#d47641] font-medium rounded-lg text-sm px-5 py-2.5 text-center">Contacter</a>
                                 </div>
                             </div>
                         </div>
@@ -396,17 +395,6 @@
                 <i class='bx bx-up-arrow-alt scrollup__icon'></i>
             </a>
         </div>
-        <script>
-            // document.getElementById('app').classList.add("none");
-    
-            function showContent() {
-                document.querySelector("#loader").classList.add("none");
-                document.querySelector("#loader").style.height = "0px";
-                document.querySelector("#loader").style.display = "none";
-                document.getElementById('app').classList.remove("none");
-            }
-            setTimeout(showContent, 3000);
-        </script>
         <!--=============== MAIN JS ===============-->
         <script src="/app.js"></script>
     </body>
