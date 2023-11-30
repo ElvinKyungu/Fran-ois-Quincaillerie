@@ -141,7 +141,7 @@ img {
 }
 
 .cercle:nth-child(2) {
-  background-color: #5800FF;
+  background-color: #d47641;
   animation-delay: 0.75s;
 }
 
@@ -308,10 +308,9 @@ div.opacity{
 .home .slide .content {
   z-index: 2;
   width: 75rem;
-  padding-left: 7rem;
   margin-top: 5rem;
 }
-  
+
 .home .slide .content h3 {
   font-size: 3rem;
   color: #444;
